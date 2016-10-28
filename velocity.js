@@ -4110,7 +4110,7 @@
 					opts.complete = null;
 				} else {
 					opts.complete = function() {
-						if (complete) {
+						if (complete && elementsIndex >= elementsSize - 1) {
 							complete.call(elements, elements);
 						}
 						if (promiseData) {
